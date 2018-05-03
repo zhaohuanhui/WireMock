@@ -1,7 +1,7 @@
 # WireMock
 WireMock API模拟工具  最高支持JDK 1.7版本
 
-[WireMock - WireMock](http://wiremock.org/)
+[WireMock](http://wiremock.org/)
 
 
     模拟API以进行快速，可靠和全面的测试
