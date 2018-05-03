@@ -7,8 +7,18 @@ WireMock API模拟工具
     模拟API以进行快速，可靠和全面的测试
     WireMock是一个基于HTTP的API的模拟器。一个服务虚拟化工具或模拟服务器。
 
+##### CD进入jar路径
+    这里我以打开E:\homework\1.jpg来给大家做示范。在命令行中输入  E:  
+    输入后按下enter键。就进入E盘中
+    E:
+    如果你想要查看E盘中的文件目录，只用继续输入dir 并且按enter键即显示E盘的文件夹和文件目录！
+    dir
+    我们现在要打开的是homework文件夹 故我们继续输入 cd homework 就可以了！但是要注意cd 之后有一个空格哟！
+    同理我们如果需要查看homework中的目录继续输入dir即可
+    现在我们要打开1.jpg这张图片我们只用继续输入文件名1.JPG输入后按回车键就可以打开
+	
 ##### 启动jar包命令
-    cd d:wiremock//进入jar包路径
+
     java -jar wiremock-standalone-2.17.0.jar  –port 9999 --verbose
       
 ##### 目录说明
