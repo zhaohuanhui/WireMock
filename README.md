@@ -8,10 +8,8 @@ WireMock API模拟工具
     WireMock是一个基于HTTP的API的模拟器。一个服务虚拟化工具或模拟服务器。
 
 ##### 启动jar包命令
-    
-   
+ 
     cd/D/wiremock 
-    
     nohup java -Xms1024M -Xmx1024M -jar /D/wiremock/wiremock-standalone-2.17.0.jar  --port 9999 &
 
 ##### 目录说明
