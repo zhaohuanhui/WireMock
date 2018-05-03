@@ -95,3 +95,5 @@ WireMock API模拟工具  最高支持JDK 1.7版本
 ##### Download
 
 [wiremock-standalone-2.17.0.jar下载](https://github.com/13570524658/WireMock/raw/master/wiremock-standalone-2.17.0.jar)
+
+http://wiremock.org/docs/running-standalone/
