@@ -9,9 +9,7 @@ WireMock API模拟工具
 
 ##### 启动jar包命令
     
-    cd/D/wireMock
-
-    nohup java -Xms1024M -Xmx1024M -jar /D/wiremock/wiremock-standalone-2.17.0.jar  --port 9999 &
+    cd/D/wireMock nohup java -Xms1024M -Xmx1024M -jar /D/wiremock/wiremock-standalone-2.17.0.jar  --port 9999 &
 
 ##### 目录说明
 
