@@ -43,11 +43,11 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 		},
 		"response": {
 			"status": 200,
-		        "fixedDelayMilliseconds": 2000
+		        "fixedDelayMilliseconds": 2000,
 			 "headers": {
           		              "Content-Type": "application/json",
          		              "Cache-Control": "max-age=86400"
-      				     }
+      				     },
 			"body": "{\"code\":1,\"msg\":\"ok\"}"
 		}
 	}
@@ -71,6 +71,11 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 		},
 		"response": {
 			"status": 200,
+			"fixedDelayMilliseconds": 2000, 
+			 "headers": {
+          		              "Content-Type": "application/json",
+         		              "Cache-Control": "max-age=86400"
+      				     },
 			"bodyFileName": "funid-18.json"
 		}
 	}
@@ -96,6 +101,11 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 		},
 		"response": {
 			"status": 200,
+			"fixedDelayMilliseconds": 2000, 
+			 "headers": {
+          		              "Content-Type": "application/json",
+         		              "Cache-Control": "max-age=86400"
+      				     },
 			"jsonBody": {
 				"status": "Error",
 				"message": "Endpoint not found"
