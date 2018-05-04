@@ -31,18 +31,18 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 ##### 例子
     在mappings文件夹下随便创建一个test.json文件
     (添加修改mapping文件需要重启程序或POST调用其接口/__admin/mappings/reset)
-	
+
 	{
-    	"request": {
-    	    "method": "GET",
-    	    "urlPattern": "/mock_pass.*"
-   		 },
-    		"response": {
-    	    "status": 200,
-    	    "body": "{\"code\":1,\"msg\":\"ok\"}"
-    		}
+		"request": {
+			"method": "GET",
+			"urlPattern": "/mock_pass.*"
+		},
+		"response": {
+			"status": 200,
+			"body": "{\"code\":1,\"msg\":\"ok\"}"
 		}
-	
+	}
+
 	
 	 打开浏览器，输入：http://localhost:8080/mock_pass
 	 返回以下内容
@@ -50,38 +50,41 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 	 {"code":1,"msg":"ok"}
 
 ##### 例子1
-    {
-    "request": {
-	      "method" : "ANY",		
-        "urlPath": "/utils_provider/dubbo",
-        "queryParameters": {
-            "funid": {
-                "equalTo": "18"
-            }
-        }
-    },    
-    "response": {
-        "status": 200,
-        "bodyFileName":"funid-18.json"
-    }
-       }
+	{
+		"request": {
+			"method": "ANY",
+			"urlPath": "/utils_provider/dubbo",
+			"queryParameters": {
+				"funid": {
+					"equalTo": "18"
+				}
+			}
+		},
+		"response": {
+			"status": 200,
+			"bodyFileName": "funid-18.json"
+		}
+	}
 
 ##### 例子2
-    {
-    "request": {
-	      "method" : "ANY",		
-        "urlPath": "/utils_provider/dubbo",
-        "queryParameters": {
-            "funid": {
-                "equalTo": "18"
-            }
-        }
-    },    
-    "response": {
-        "status": 200,
-        "jsonBody":{"status":"Error","message":"Endpoint not found"}
-    }
-       }
+	{
+		"request": {
+			"method": "ANY",
+			"urlPath": "/utils_provider/dubbo",
+			"queryParameters": {
+				"funid": {
+					"equalTo": "18"
+				}
+			}
+		},
+		"response": {
+			"status": 200,
+			"jsonBody": {
+				"status": "Error",
+				"message": "Endpoint not found"
+			}
+		}
+	}
 
 ##### bodyFileName和jsonBody区别
 
