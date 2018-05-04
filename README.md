@@ -47,11 +47,11 @@ WireMock API模拟工具  已支持JDK 10.1版本
 		"response": {
 			"status": 200,
 		        "fixedDelayMilliseconds": 2000,
-			 "headers": {
-          		              "Content-Type": "application/json",
-         		              "Cache-Control": "max-age=86400"
+			"headers": {
+          		            "Content-Type": "application/json",
+         		            "Cache-Control": "max-age=86400"
       				     },
-			"body": "{\"code\":1,\"msg\":\"ok\"}"
+			"body": "{\"code\":200,\"msg\":\"ok\"}"
 		}
 	}
 
@@ -76,33 +76,41 @@ WireMock API模拟工具  已支持JDK 10.1版本
 				"status": 200,
 				"fixedDelayMilliseconds": 2000, 
 				 "headers": {
-					      "Content-Type": "application/json",
-					      "Cache-Control": "max-age=86400"
+					     "Content-Type": "application/json",
+					     "Cache-Control": "max-age=86400"
 					     },
 				"jsonBody": {
-					"status": "200",
-					"message": "你所在的城市是肇庆"
-				}
-			}
-		}
+					     "status": "200",
+				             "message": "你所在的城市是肇庆"
+				            }
+		          	}
+		   }
+		  打开浏览器，输入：http://localhost:8080/province/city?cityId=18
+		   返回以下内容
+	
+			{"status": "200","message": "你所在的城市是肇庆"}
 	
 ##### 模拟404错误
 		 {
-	    "request": {
-		"url": "/unknown",
-		"method": "GET"
-	    },
-	    "response": {
+	 	   "request": {
+		   "url": "/unknown",
+		   "method": "GET"
+	         },
+	        "response": {
 		"status": 404,
 		"headers": {
-		"Content-Type": "application/json",
+		"Content-Type": "application/json"},
 			"jsonBody": {
 					"status": "404",
-					"message": "找不到网页"
+					"message": "加载失败"
 				}
 		}
-	    }
+	   
 	}
+	  打开浏览器，输入：http://localhost:8080/unknown
+		   返回以下内容
+	
+			{"status": "404","message": "加载失败"}
 
 ##### 模拟响应超时
 	{
@@ -112,17 +120,21 @@ WireMock API模拟工具  已支持JDK 10.1版本
 	    },
 	    "response": {
 		"status": 408,
+		"fixedDelayMilliseconds": 20000,
 		"headers": {
 		    "Content-Type": "application/json",
 		    "Cache-Control": "max-age=86400"
 		},
-		"fixedDelayMilliseconds": 20000，
 		"jsonBody": {
 					"status": "408",
 					"message": "响应超时"
 				}
 	    }
 	}
+		  打开浏览器，输入：http://localhost:8080/delayed
+		   返回以下内容
+	
+			{"status": "408","message": "响应超时"}
 
 ##### bodyFileName例子
 	{
