@@ -32,7 +32,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
       在mappings文件夹下随便创建一个test.json文件
      (添加修改mapping文件需要重启程序或POST调用其接口/__admin/mappings/reset)
       
-      打开浏览器，输入：http://localhost:8080/admin/mappings/reset
+      打开浏览器，输入：http://localhost:8080/__admin/mappings/reset
 
 ##### 例子
 
