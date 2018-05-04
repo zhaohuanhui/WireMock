@@ -43,7 +43,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 		}
 	
 	
-	 打开浏览器，输入：http://127.0.0.1:9999/mock_pass
+	 打开浏览器，输入：http://localhost:8080/mock_pass
 	 返回以下内容
 	
 	 {"code":1,"msg":"ok"}
