@@ -59,29 +59,29 @@ WireMock API模拟工具  已支持JDK 10.1版本
 	 {"code":1,"msg":"ok"}
 	 
 ##### 模拟Query参数匹配 
-{
-		"request": {
-			"method": "POST",
-			"urlPath": "/province/city",
-			"queryParameters": {
-				"cityId": {
-					"equalTo": "18"
+	{
+			"request": {
+				"method": "POST",
+				"urlPath": "/province/city",
+				"queryParameters": {
+					"cityId": {
+						"equalTo": "18"
+					}
+				}
+			},
+			"response": {
+				"status": 200,
+				"fixedDelayMilliseconds": 2000, 
+				 "headers": {
+					      "Content-Type": "application/json",
+					      "Cache-Control": "max-age=86400"
+					     },
+				"jsonBody": {
+					"status": "200",
+					"message": "你所在的城市是肇庆"
 				}
 			}
-		},
-		"response": {
-			"status": 200,
-			"fixedDelayMilliseconds": 2000, 
-			 "headers": {
-          		              "Content-Type": "application/json",
-         		              "Cache-Control": "max-age=86400"
-      				     },
-			"jsonBody": {
-				"status": "200",
-				"message": "你所在的城市是肇庆"
-			}
 		}
-	}
 	
 ##### 模拟404错误
 		 {
