@@ -57,6 +57,69 @@ WireMock API模拟工具  已支持JDK 10.1版本
 	 返回以下内容
 	
 	 {"code":1,"msg":"ok"}
+	 
+##### 模拟Query参数匹配 
+{
+		"request": {
+			"method": "POST",
+			"urlPath": "/province/city",
+			"queryParameters": {
+				"cityId": {
+					"equalTo": "18"
+				}
+			}
+		},
+		"response": {
+			"status": 200,
+			"fixedDelayMilliseconds": 2000, 
+			 "headers": {
+          		              "Content-Type": "application/json",
+         		              "Cache-Control": "max-age=86400"
+      				     },
+			"jsonBody": {
+				"status": "200",
+				"message": "你所在的城市是肇庆"
+			}
+		}
+	}
+	
+##### 模拟404错误
+		 {
+	    "request": {
+		"url": "/unknown",
+		"method": "GET"
+	    },
+	    "response": {
+		"status": 404,
+		"headers": {
+		"Content-Type": "application/json",
+			"jsonBody": {
+					"status": "404",
+					"message": "找不到网页"
+				}
+		}
+	    }
+	}
+
+##### 模拟响应超时
+	{
+	    "request": {
+		"method": "GET",
+		"url": "/delayed"
+	    },
+	    "response": {
+		"status": 408,
+		"headers": {
+		    "Content-Type": "application/json",
+		    "Cache-Control": "max-age=86400"
+		},
+		"fixedDelayMilliseconds": 20000，
+		"jsonBody": {
+					"status": "408",
+					"message": "响应超时"
+				}
+	    }
+	}
 
 ##### bodyFileName例子
 	{
