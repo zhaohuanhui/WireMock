@@ -25,8 +25,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 ##### 目录说明
 
     程序启动后在同目录下生成两个空的文件夹：__files和mappings。
-    __files是放上传/下载/录制文件用的。
-    mappings放你想要的Service返回数据和Url mapping。
+    __files是放上传/下载/录制文件用的。mappings放你想要的Service返回数据和Url mapping。
     
 ##### 重启程序
      
