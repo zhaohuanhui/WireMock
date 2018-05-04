@@ -34,7 +34,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
       
       打开浏览器，输入：http://localhost:8080/__admin/mappings/reset
 
-##### 例子
+##### 测试例子
 
 	{
 		"request": {
@@ -43,6 +43,11 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 		},
 		"response": {
 			"status": 200,
+		        "fixedDelayMilliseconds": 2000
+			 "headers": {
+          		              "Content-Type": "application/json",
+         		              "Cache-Control": "max-age=86400"
+      				     }
 			"body": "{\"code\":1,\"msg\":\"ok\"}"
 		}
 	}
