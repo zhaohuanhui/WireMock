@@ -69,6 +69,14 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 			"bodyFileName": "funid-18.json"
 		}
 	}
+	
+	 打开浏览器，输入：http://localhost:8080/utils_provider/dubbo?funid=18
+	 返回以下内容
+	
+		{
+	          "status": "Error",
+	          "message": "Endpoint not found"
+	        }
 
 ##### 例子2
 	{
@@ -89,6 +97,14 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 			}
 		}
 	}
+	
+		 打开浏览器，输入：http://localhost:8080/utils_provider/dubbo?funid=18
+	         返回以下内容
+	
+		{
+	          "status": "Error",
+	          "message": "Endpoint not found"
+	        }
 
 ##### bodyFileName和jsonBody区别
 
