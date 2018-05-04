@@ -58,7 +58,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 	
 	 {"code":1,"msg":"ok"}
 
-##### 例子1
+##### bodyFileName例子
 	{
 		"request": {
 			"method": "ANY",
@@ -88,7 +88,7 @@ WireMock API模拟工具  最高支持JDK 1.8版本
 	          "message": "Endpoint not found"
 	        }
 
-##### 例子2
+##### jsonBody例子
 	{
 		"request": {
 			"method": "ANY",
