@@ -51,7 +51,7 @@ WireMock API模拟工具  已支持JDK 10.1版本
           		            "Content-Type": "application/json",
          		            "Cache-Control": "max-age=86400"
       				     },
-			"body": "{\"code\":200,\"msg\":\"ok\"}"
+			"body": "{\"status\":200,\"msg\":\"ok\"}"
 		}
 	}
 
@@ -81,14 +81,14 @@ WireMock API模拟工具  已支持JDK 10.1版本
 					     },
 				"jsonBody": {
 					     "status": "200",
-				             "message": "你所在的城市是肇庆"
+				             "msg": "你所在的城市是肇庆"
 				            }
 		          	}
 		   }
 		  打开浏览器，输入：http://localhost:8080/province/city?cityId=18
 		   返回以下内容
 	
-			{"status": "200","message": "你所在的城市是肇庆"}
+			{"status": "200","msg": "你所在的城市是肇庆"}
 	
 ##### 模拟404错误
 		 {
@@ -102,7 +102,7 @@ WireMock API模拟工具  已支持JDK 10.1版本
 		"Content-Type": "application/json"},
 			"jsonBody": {
 					"status": "404",
-					"message": "加载失败"
+					"msg": "加载失败"
 				}
 		}
 	   
@@ -110,7 +110,7 @@ WireMock API模拟工具  已支持JDK 10.1版本
 	  打开浏览器，输入：http://localhost:8080/unknown
 		   返回以下内容
 	
-			{"status": "404","message": "加载失败"}
+			{"status": "404","msg": "加载失败"}
 
 ##### 模拟响应超时
 	{
@@ -127,14 +127,14 @@ WireMock API模拟工具  已支持JDK 10.1版本
 		},
 		"jsonBody": {
 					"status": "408",
-					"message": "响应超时"
+					"msg": "响应超时"
 				}
 	    }
 	}
 		  打开浏览器，输入：http://localhost:8080/delayed
 		   返回以下内容
 	
-			{"status": "408","message": "响应超时"}
+			{"status": "408","msg": "响应超时"}
 
 ##### bodyFileName例子
 	{
@@ -186,7 +186,7 @@ WireMock API模拟工具  已支持JDK 10.1版本
       				     },
 			"jsonBody": {
 				"status": "Error",
-				"message": "Endpoint not found"
+				"msg": "Endpoint not found"
 			}
 		}
 	}
@@ -196,7 +196,7 @@ WireMock API模拟工具  已支持JDK 10.1版本
 	
 		{
 	          "status": "Error",
-	          "message": "Endpoint not found"
+	          "msg": "Endpoint not found"
 	        }
 
 ##### bodyFileName和jsonBody区别
