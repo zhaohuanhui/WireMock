@@ -1,8 +1,8 @@
 # WireMock
 WireMock API模拟工具  已支持JDK 10.1版本
 
-[WireMock](http://wiremock.org/)
-
+##### 官网
+http://wiremock.org
 
     模拟API以进行快速，可靠和全面的测试
     WireMock是一个基于HTTP的API的模拟器。一个服务虚拟化工具或模拟服务器。
@@ -204,14 +204,15 @@ WireMock API模拟工具  已支持JDK 10.1版本
     bodyFileName为存放响应数据的文件名，其为在__files里面建立的响应文件，一般功能测试时使用
     jsonBody就是响应的json数据，其数据会存放到内存里。为防止full gc，设置适当的年老代空间，一般压测时才使用。
 
-##### 参考
+##### 使用说明
 
 http://wiremock.org/docs/stubbing/
 
 http://wiremock.org/docs/request-matching/
 
-##### Download
+##### github下载地址
 
 [wiremock-standalone-2.17.0.jar下载](https://github.com/13570524658/WireMock/raw/master/wiremock-standalone-2.17.0.jar)
 
+##### 官方下载地址
 http://wiremock.org/docs/running-standalone/
