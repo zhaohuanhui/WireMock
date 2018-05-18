@@ -206,8 +206,9 @@ WireMock API模拟工具  已支持JDK 10.1版本
 
 ##### 参考
 
-    http://wiremock.org/docs/stubbing/
-    http://wiremock.org/docs/request-matching/
+http://wiremock.org/docs/stubbing/
+
+http://wiremock.org/docs/request-matching/
 
 ##### Download
 
